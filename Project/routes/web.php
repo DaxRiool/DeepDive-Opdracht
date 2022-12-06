@@ -13,18 +13,45 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\UserController;
+
+
 Route::get('/', function () {
-    return view('locations');
+    return view('Register');
 });
 
-Route::post('/AddLocationStore/{id?}', [atbuserController::class, 'Storeregister']);
+Route::post('/AddLocationStore/{id?}', [IndexController::class, 'AddLocationStore']);
+
+Route::post('/AddPoiStore', [IndexController::class, 'AddPoiStore']);
 
 
 Route::get('/AddLocation', function () {
     return view('AddLocation');
 });
 
-Route::get('/AddLocationStore', function () {
-    return view('welcome');
+Route::get('/AddPoi/{Location_ID?}', [IndexController::class, 'AddPoi']);
+
+Route::get('/Pois/{location_id?}', [IndexController::class, 'ShowPois']);
+
+Route::get('/Poi/{pois_id?}', [IndexController::class, 'ShowSinglePoi']);
+
+Route::get('/PoiAdd/{pois_id?}', [IndexController::class, 'AddElement']);
+
+
+
+
+Route::get('/Locations', [IndexController::class, 'ShowLocations']);
+
+
+Route::get('/Login', function () {
+    return view('Login');
 });
+
+Route::post('/RegisterStore', [UserController::class, 'RegisterStore']);
+
+Route::post('/LoginStore', [UserController::class, 'LoginStore']);
+
+Route::get('/logout', [UserController::class, 'Logout']);
+
 
