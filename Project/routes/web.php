@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('locations');
+});
+
+Route::post('/AddLocationStore/{id?}', [atbuserController::class, 'Storeregister']);
+
+
+Route::get('/AddLocation', function () {
+    return view('AddLocation');
+});
+
+Route::get('/AddLocationStore', function () {
     return view('welcome');
 });
+
