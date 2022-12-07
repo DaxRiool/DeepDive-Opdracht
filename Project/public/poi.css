@@ -325,3 +325,15 @@ body {
 }
  
 }
+
+i.fa-solid.fa-arrow-left.fa-3x {
+  position: relative;
+  bottom: 39px;
+  left: 21px;
+}
+
+i.fa-solid.fa-plus.fa-3x {
+    position: relative;
+    bottom: 43px;
+    left: 22px;
+}
