@@ -1,16 +1,10 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="location.css">
+    <link rel="stylesheet" href="poi.css">
     <title>Location</title>
 </head>
 <body>
@@ -36,17 +30,17 @@
         </div>
       </div>
     </nav>
-    <h1>locations</h1>
-
-    <a href="AddLocation">add</a>
+    <h1>Locations</h1>
+    <a href="AddLocation"><i class="fa-solid fa-plus fa-3x"></i></a>
     <br><br>
     @foreach ($locations as $location)
     <a href="Pois/{{$location->id}}">
         <button>
-            <p>{{$location->Naam}}</p>
-            <p>{{$location->aantal_pois}}</p>
+            <p>Location : {{$location->Naam}}</p>
+            <p>Number of POI'S : {{$location->aantal_pois}}</p>
         </button>
     </a>
     @endforeach
+    <script src="https://kit.fontawesome.com/89b8d7f2db.js" crossorigin="anonymous"></script>
 </body>
 </html>
