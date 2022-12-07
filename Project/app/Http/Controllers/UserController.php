@@ -22,7 +22,6 @@ class UserController extends Controller
                 'email' => $req->email,
                 'password' => $req->password
             ]);
-
             return redirect("Login");
         }
     }
