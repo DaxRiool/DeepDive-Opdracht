@@ -16,7 +16,7 @@ class CreatePoiTable extends Migration
         Schema::create('poi', function (Blueprint $table) {
             $table->id();
             $table->integer("poi_list_ID");
-            $table->integer("instruction_ID");
+            $table->integer("instruction_ID")->nullable();
             $table->string("Naam");
             $table->string("Moeilijkheidsgraad");
             $table->timestamps();

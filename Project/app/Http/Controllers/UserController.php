@@ -13,18 +13,18 @@ class UserController extends Controller
     public function RegisterStore(Request $req) {
         $users = DB::table('users')->where([
             'email' => $req->email,
-        ]);
-
+        ])->first();
+        
         if (isset($users)) {
             echo "gebruiker bestaat al";
+        } else {
+            DB::table('users')->insertGetID([
+                'email' => $req->email,
+                'password' => $req->password
+            ]);
+
+            return redirect("Login");
         }
-
-        DB::table('users')->insertGetID([
-            'email' => $req->email,
-            'password' => $req->password
-        ]);
-
-        return redirect("Login");
     }
 
     public function LoginStore(Request $req) {
