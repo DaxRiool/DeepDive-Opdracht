@@ -72,9 +72,9 @@ class IndexController extends Controller
 
     public function AddElement($poi_list_id) {
         DB::table('poi_list')->insert([
-            // poi_list_ID
-            // Naam	
-            // Moeilijkheidsgraad	
+            poi_list_ID
+            Naam	
+            Moeilijkheidsgraad	
         ]);
     }
 }
