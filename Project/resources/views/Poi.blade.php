@@ -56,9 +56,11 @@
     <a href="../AddElement/{{$poi_list->id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
 
     @foreach($elements as $element)
+    <button>
         <p>Name: {{$element->Naam}}</p>
         <p>Difficulty: {{$element->Moeilijkheidsgraad}}</p>
         <br><br>
+      </button>
     @endforeach
 </body>
 </html>
