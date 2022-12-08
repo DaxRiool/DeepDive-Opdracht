@@ -34,11 +34,23 @@ Route::get('/AddPoi/{Location_ID?}', [IndexController::class, 'AddPoi']);
 
 Route::get('/Pois/{location_id?}', [IndexController::class, 'ShowPois']);
 
-Route::get('/Poi/{pois_id?}', [IndexController::class, 'ShowSinglePoi']);
+// Route::get('/Poi/{pois_id?}', [IndexController::class, 'ShowSinglePoi']);
+
+
+
+
+
+Route::get('/AddElement/{pois_id?}', [IndexController::class, 'AddElement']);
+
+Route::post('/AddElementStore', [IndexController::class, 'AddElementStore']);
+
+
+
+Route::get('/Poi/{poi_list_id?}', [IndexController::class, 'ShowElements']);
 
 Route::get('/PoiAdd/{pois_id?}', [IndexController::class, 'AddElement']);
 
-
+Route::post('/UpdatePoi', [IndexController::class, 'UpdatePoi']);
 
 
 Route::get('/Locations', [IndexController::class, 'ShowLocations']);
@@ -54,4 +66,8 @@ Route::post('/LoginStore', [UserController::class, 'LoginStore']);
 
 Route::get('/logout', [UserController::class, 'Logout']);
 
+Route::get('/Instruction/{instruction_id?}', [IndexController::class, 'ShowInstruction']);
 
+Route::get('/AddInstruction/{instruction_id?}', [IndexController::class, 'ShowInstruction']);
+
+Route::post('/AddInstructionStore', [IndexController::class, 'ShowInstruction']);

@@ -62,19 +62,42 @@ class IndexController extends Controller
         return redirect("Pois/$req->location_id");
     }
 
-    public function ShowSinglePoi($poi_list_id) {
-        $poi_list = DB::table('poi_list')->where("id", '=', $poi_list_id)->get()->first();
+    // public function ShowSinglePoi($poi_list_id) {
+    //     $poi_list = DB::table('poi_list')->where("id", '=', $poi_list_id)->get()->first();
 
-        // $poi = DB::table('poi')->where('poi_list_ID', '=', $poi_list_id)->get();
-
-        return view("Poi", ["poi_list" => $poi_list]);
-    }
+    //     return view("Poi", ["poi_list" => $poi_list]);
+    // }
 
     public function AddElement($poi_list_id) {
-        DB::table('poi_list')->insert([
-            // poi_list_ID
-            // Naam	
-            // Moeilijkheidsgraad	
+        return view("AddElement", ["poi_list_id" => $poi_list_id]);
+    }
+
+
+    public function AddElementStore(Request $req) {
+        DB::table('poi')->insert([
+            "poi_list_ID" => $req->poi_list_id,
+            "Moeilijkheidsgraad" => $req->Moeilijkheidsgraad,
+            "Naam" => $req->Naam,
         ]);
+
+        return redirect("Poi/$req->poi_list_id");
+    }
+
+    public function ShowElements($poi_list_ID) {
+        $elements = DB::table('poi')->where('poi_list_ID', '=', $poi_list_ID)->get();
+
+        $poi_list = DB::table('poi_list')->where('id', '=', $poi_list_ID)->get()->first();
+
+        return view("Poi", ["elements" => $elements, "poi_list" => $poi_list]);
+    }
+
+    public function UpdatePoi(Request $req) {
+        DB::table('poi_list')-> update([
+            "Naam" => $req->Naam,
+            "Status" => $req->Status,
+            "Locatie_in_Gebouw" => $req->Locatie_In_Gebouw
+        ]);
+
+        return redirect("Poi/$req->poi_list_id");
     }
 }

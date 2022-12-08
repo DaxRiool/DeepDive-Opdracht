@@ -1,15 +1,20 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="addlocation.css">
-    <title>AddLocation</title>
+    <link rel="stylesheet" href="location.css">
+    <title>Elements</title>
 </head>
 <body>
-    <div class="main-block">
-      <nav>
+    <nav>
       <div class="navbar">
         <div class="container nav-container">
             <input class="checkbox" type="checkbox" name="" id="" />
@@ -31,23 +36,16 @@
         </div>
       </div>
     </nav>
-
-    <form action="../AddLocationStore" method="post">
-        @csrf
-      <h1>ADD Location</h1>
-      <div class="icon">
-        <i class="fas fa-user-circle"></i>
-      </div>
-      <div class="formcontainer">
-      <div class="container">
-        <p>Location</p>
-        <input type="text" name="Naam">
-        <br><br>
-        <!-- <input type="submit" value="send"> -->
-      </div>
-      <button type="submit"><strong>ENTER</strong></button>
-      </div>
-    </form>
-    </div>
+    <h1>elements</h1>
+    <a href="AddElement">add</a>
+    <br><br>
+    @foreach ($locations as $location)
+    <!-- <a href="Pois/{{$location->id}}"> -->
+        <button>
+            <p>{{$location->Naam}}</p>
+            <p>{{$location->aantal_pois}}</p>
+        </button>
+    <!-- </a> -->
+    @endforeach
 </body>
 </html>
