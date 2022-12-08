@@ -87,18 +87,22 @@ body {
 }
 
 .navbar .menu-items {
-  padding-top: 120px;
   height: auto;
-  width: 103%;
+  width: 216px;
   background: #00AEEF !important;
-  transform: translate(-150%);
+  transform: translate(150%);
   display: flex;
   flex-direction: column;
-  margin-left: -40px;
-  padding-left: 50px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 20.5s ease-in-out;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: transform;
   text-align: center;
   background: beige;
+  position: relative;
+  left: 1419px;
+  z-index: 20;
 }
 
 .navbar .menu-items li {
@@ -295,19 +299,22 @@ button:hover {
   }
 
   .navbar .menu-items {
-    padding-top: 120px;
-    height: auto;
+    height: 907px;
     width: 111%;
     background: #00AEEF !important;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
-    margin-left: -40px;
-    padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
     background: beige;
-  }
+    position: relative;
+    left: 0px;
+    bottom: 7px;
+    z-index: 20;
+    padding-top: 294px;
+    padding-right: 59px;
+}
 
   .navbar .menu-items li {
     margin-bottom: 1.2rem;

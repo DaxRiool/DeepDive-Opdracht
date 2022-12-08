@@ -33,9 +33,6 @@
     <form action="../AddPoiStore" method="post">
         @csrf   
       <h1>ADD POI</h1>
-      <div class="icon">
-        <i class="fas fa-user-circle"></i>
-      </div>
       <div class="formcontainer">
       <div class="container">
         <input type="hidden" name="location_id" value="{{$Location_id}}">
@@ -43,7 +40,7 @@
         <input type="text" name="naam">
         <br><br>
         <p>Location in building</p>
-        <input type="textarea" name="Locatie_In_Gebouw">
+        <input type="text" name="Locatie_In_Gebouw">
         <br><br>
         <p>status</p>
         <select name="status">
@@ -56,24 +53,9 @@
       <button type="submit"><strong>ENTER</strong></button>
       </div>
     </form>
-</body>
+    <br>
+    <br>
+    <a href="../Pois/{{$Location_id}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
+  </body>
 </html>
-
-
-<!-- <form action="../AddPoiStore" >
-    @csrf
-    <input type="hidden" name="location_id" value="{{$Location_id}}">
-    <p>Poi name</p>
-    <input type="text" name="naam">
-    <br><br>
-    <p>Location in building</p>
-    <input type="textarea" name="Locatie_In_Gebouw">
-    <br><br>
-    <p>status</p>
-    <select name="status">
-        <option value="Working">Working</option>
-        <option value="Broken">Broken</option>
-    </select>
-    <br><br>
-    <input type="submit" value="send">
-</form> -->
+<script src="https://kit.fontawesome.com/89b8d7f2db.js" crossorigin="anonymous"></script>
