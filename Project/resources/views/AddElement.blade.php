@@ -39,7 +39,7 @@
       <div class="formcontainer">
       <div class="container">
         <p>Name</p>
-        <input type="text" name="Naam">
+        <input type="text" name="Naam" required="">
         <br><br>
         <p>Moeilijkheidsgraad</p>
         <select name="Moeilijkheidsgraad">

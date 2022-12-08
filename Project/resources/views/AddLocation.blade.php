@@ -38,7 +38,7 @@
       <div class="formcontainer">
       <div class="container">
         <p>Location</p>
-        <input type="text" name="Naam">
+        <input type="text" name="Naam" required="">
         <br><br>
         <!-- <input type="submit" value="send"> -->
       </div>

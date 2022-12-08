@@ -11,7 +11,7 @@
     <nav>
       <div class="navbar">
         <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
+            <input class="checkbox" type="checkbox" name="" id=""/>
             <div class="hamburger-lines">
               <span class="line line1"></span>
               <span class="line line2"></span>
@@ -37,10 +37,10 @@
       <div class="container">
         <input type="hidden" name="location_id" value="{{$Location_id}}">
         <p>Poi name</p>
-        <input type="text" name="naam">
+        <input type="text" name="naam" required="">
         <br><br>
         <p>Location in building</p>
-        <input type="text" name="Locatie_In_Gebouw">
+        <input type="text" name="Locatie_In_Gebouw" required="">
         <br><br>
         <p>status</p>
         <select name="status">
