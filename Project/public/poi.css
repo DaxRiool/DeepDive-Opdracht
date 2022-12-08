@@ -156,6 +156,7 @@ input[type=email] {
   border: 1px solid #ccc;
   box-sizing: border-box;
   text-align: center;
+  font-size: 25px;
 }
 
 button {
@@ -370,4 +371,15 @@ i.fa-solid.fa-plus.fa-3x {
     position: relative;
     bottom: 43px;
     left: 22px;
+}
+
+select {
+  border-radius: 11px;
+  width: 115px;
+  font-size: 25px;
+  height: 37px;
+}
+
+.select-center {
+  text-align: center;
 }
