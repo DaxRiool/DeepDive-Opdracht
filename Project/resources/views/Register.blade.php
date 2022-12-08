@@ -48,7 +48,7 @@
       </div>
       <button type="submit"><strong>REGISTER</strong></button>
     </form>
-    <div ><a href="Login"><button class="account"><strong>ALREADY HAVE AN ACCOUNT ? LOGIN</strong></button></a></div>
+    <div><a href="Login"><button class="account"><strong>ALREADY HAVE AN ACCOUNT ? LOGIN</strong></button></a></div>
 </div>
 </body>
 </html>

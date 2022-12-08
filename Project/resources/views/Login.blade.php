@@ -30,14 +30,14 @@
         </div>
       </div>
     </nav>
-<form action="LoginStore" method="post">
+    <div class="formcontainer">
+      <form action="LoginStore" method="post">
         @csrf
-      <h1>Login</h1>
+        <h1>Login</h1>
+        <div class="container">
       <div class="icon">
         <i class="fas fa-user-circle"></i>
       </div>
-      <div class="formcontainer">
-      <div class="container">
     <p>Email</p>
     <input type="email" name="email" id="" required="">
     <br>
@@ -47,7 +47,8 @@
     <br><br>
       </div>
       <button type="submit"><strong>LOGIN</strong></button>
-      </div>
     </form>
+    <div><a href="/"><button class="account"><strong>DONT HAVE AN ACCOUNT ? REGISTER</strong></button></a></div>
+    </div>
 </body>
 </html>
