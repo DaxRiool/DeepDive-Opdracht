@@ -39,7 +39,7 @@
       <div class="formcontainer">
       <div class="container">
         <p>Step Number</p>
-        <input type="number" name="stap" required="">
+        <input type="number" min="1" name="stap" required="">
           <br><br>
         <p>Instruction</p>
         <input type="text" name="instructie" required="">
