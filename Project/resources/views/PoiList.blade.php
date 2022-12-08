@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +9,9 @@
     <link rel="stylesheet" href="../poi.css">
     <title>Document</title>
 </head>
+
 <body>
+
 <nav>
       <div class="navbar">
         <div class="container nav-container">
@@ -17,7 +21,7 @@
               <span class="line line2"></span>
               <span class="line line3"></span>
             </div>
-            <div class="head-img">  
+            <div class="head-img">
             <img src="../facility_logo.jpg" width="150" height="50">
             </div>
           <div class="menu-items">
@@ -30,7 +34,9 @@
         </div>
       </div>
     </nav>
+
 <h1>Alle Poi's</h1>
+
 
 <a href="../Locations"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
 <br><br>
@@ -43,7 +49,8 @@
         <p>{{$poi->Status}}</p>
     </button>
 </a>
-@endforeach    
+@endforeach
 </body>
 </html>
+
 <script src="https://kit.fontawesome.com/89b8d7f2db.js" crossorigin="anonymous"></script>
