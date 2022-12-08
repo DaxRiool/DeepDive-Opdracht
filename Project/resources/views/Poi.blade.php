@@ -54,6 +54,7 @@
     <a href="../Pois/{{$poi_list->Locatie_ID}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
     <br><br>
     <a href="../AddElement/{{$poi_list->id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
+    <br>
 
     @foreach($elements as $element)
     <button>

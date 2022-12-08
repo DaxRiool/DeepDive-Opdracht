@@ -41,6 +41,7 @@
 <a href="../Locations"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
 <br><br>
 <a href="../AddPoi/{{$Location_ID}}"><i class="fa-solid fa-plus fa-3x"></i></a>
+<br><br>
 @foreach ($pois as $poi)
 <a href="../Poi/{{$poi->id}}">
     <button>
