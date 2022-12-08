@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../location.css">
+    <link rel="stylesheet" href="../poi.css">
     <title>Elements</title>
 </head>
 <body>
@@ -30,15 +30,18 @@
         </div>
       </div>
     </nav>
-    <h1>elements</h1>
-    <a href="../AddStap/{{$poi_id}}">add</a>
+    <h1>Instructions</h1>
+    <a href="../AddStap/{{$poi_id}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
     <a href=""></a>
     <br><br>
     @foreach ($instructions as $instruction)
-        <button>
-            <p>Step{{$instruction->stap}}</p>
-            <p>Description:{{$instruction->instructie}}</p>
-        </button>
+    <div class="stap-container">
+    <div class="stap">
+            <p>Step: {{$instruction->stap}}</p>
+            <p>Description: {{$instruction->instructie}}</p>
+</div>
+</div>
     @endforeach
 </body>
 </html>
+<script src="https://kit.fontawesome.com/89b8d7f2db.js" crossorigin="anonymous"></script>

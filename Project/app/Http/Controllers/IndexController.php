@@ -97,7 +97,7 @@ class IndexController extends Controller
     }
 
     public function ShowInstruction($poi_id) {
-        $instruction = DB::table('instructions')->where("poi_id", '=', $poi_id)->orderBy('stap', 'desc')->get();
+        $instruction = DB::table('instructions')->where("poi_id", '=', $poi_id)->orderBy('stap', 'asc')->get();
     
         return view("Instruction", ["instructions" => $instruction, "poi_id" => $poi_id]);
     }
