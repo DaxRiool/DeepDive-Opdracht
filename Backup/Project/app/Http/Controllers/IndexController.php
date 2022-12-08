@@ -62,11 +62,6 @@ class IndexController extends Controller
         return redirect("Pois/$req->location_id");
     }
 
-    // public function ShowSinglePoi($poi_list_id) {
-    //     $poi_list = DB::table('poi_list')->where("id", '=', $poi_list_id)->get()->first();
-
-    //     return view("Poi", ["poi_list" => $poi_list]);
-    // }
 
     public function AddElement($poi_list_id) {
         return view("AddElement", ["poi_list_id" => $poi_list_id]);

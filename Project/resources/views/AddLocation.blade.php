@@ -35,9 +35,6 @@
     <form action="../AddLocationStore" method="post">
         @csrf
       <h1>ADD Location</h1>
-      <div class="icon">
-        <i class="fas fa-user-circle"></i>
-      </div>
       <div class="formcontainer">
       <div class="container">
         <p>Location</p>
@@ -48,6 +45,10 @@
       <button type="submit"><strong>ENTER</strong></button>
       </div>
     </form>
+    <br>
+    <br>
+    <a href="../Locations"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
     </div>
 </body>
 </html>
+<script src="https://kit.fontawesome.com/89b8d7f2db.js" crossorigin="anonymous"></script>

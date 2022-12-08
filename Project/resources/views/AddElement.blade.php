@@ -36,9 +36,6 @@
         @csrf
       <h1>ADD Element</h1>
       <input type="hidden" name="poi_list_id" value="{{$poi_list_id}}">
-      <div class="icon">
-        <i class="fas fa-user-circle"></i>
-      </div>
       <div class="formcontainer">
       <div class="container">
         <p>Name</p>
@@ -54,6 +51,10 @@
       <button type="submit"><strong>ENTER</strong></button>
       </div>
     </form>
+    <br>
+    <br>
+    <a href="../Poi/{{$poi_list_id}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
     </div>
 </body>
 </html>
+<script src="https://kit.fontawesome.com/89b8d7f2db.js" crossorigin="anonymous"></script>
