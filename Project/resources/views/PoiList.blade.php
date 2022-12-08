@@ -44,9 +44,9 @@
 @foreach ($pois as $poi)
 <a href="../Poi/{{$poi->id}}">
     <button>
-        <p>{{$poi->Naam}}</p>
-        <p>{{$poi->Locatie_In_Gebouw}}</p>
-        <p>{{$poi->Status}}</p>
+        <p>Name: {{$poi->Naam}}</p>
+        <p>Location: {{$poi->Locatie_In_Gebouw}}</p>
+        <p>Status: {{$poi->Status}}</p>
     </button>
 </a>
 @endforeach
