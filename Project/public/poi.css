@@ -168,6 +168,7 @@ button {
   cursor: grab;
   width: 48%;
   justify-content: center;
+  border-radius: 25px;
 }
 
 .account {
@@ -382,4 +383,10 @@ select {
 
 .select-center {
   text-align: center;
+}
+
+.p-button p {
+  position: relative;
+  top: 15px;
+  font-size: 20px;
 }

@@ -57,8 +57,10 @@
 
     @foreach($elements as $element)
     <button>
+        <div class ="p-button">
         <p>Name: {{$element->Naam}}</p>
         <p>Difficulty: {{$element->Moeilijkheidsgraad}}</p>
+</div>
         <br><br>
       </button>
     @endforeach
