@@ -31,11 +31,22 @@
         </div>
       </div>
     </nav>
-    
-    <h1>{{$poi_list->Naam}}</h1>
-    <h2>{{$poi_list->Locatie_In_Gebouw}}</h2>
-    <h3>{{$poi_list->Status}}</h3>
-    
+    <form action="../UpdatePoi" method="POST">
+      @csrf
+      <input type="hidden" name="poi_list_id" value="{{$poi_list->id}}">
+      <input type="text" name="Naam" value="{{$poi_list->Naam}}" id="">
+      <input type="text" name="Locatie_In_Gebouw" value="{{$poi_list->Locatie_In_Gebouw}}" id="">
+      <select onchange="submit()" name="Status">
+        <option value="{{$poi_list->Status}}" selected>{{$poi_list->Status}}</option>
+        @if ($poi_list->Status == "Working")
+            <option value="Broken">Broken</option>
+        @else
+            <option value="Working">Working</option>
+        @endif
+      </select>
+      <input type="submit" value="" hidden="">
+    </form>
+    <br>
     <a href="../Pois/{{$poi_list->Locatie_ID}}">All Pois</a>
     <br><br>
     <a href="../AddElement/{{$poi_list->id}}">Add</a>

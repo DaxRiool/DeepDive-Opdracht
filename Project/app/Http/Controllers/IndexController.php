@@ -90,4 +90,14 @@ class IndexController extends Controller
 
         return view("Poi", ["elements" => $elements, "poi_list" => $poi_list]);
     }
+
+    public function UpdatePoi(Request $req) {
+        DB::table('poi_list')-> update([
+            "Naam" => $req->Naam,
+            "Status" => $req->Status,
+            "Locatie_in_Gebouw" => $req->Locatie_In_Gebouw
+        ]);
+
+        return redirect("Poi/$req->poi_list_id");
+    }
 }

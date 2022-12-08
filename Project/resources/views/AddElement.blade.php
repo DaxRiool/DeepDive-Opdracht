@@ -19,7 +19,7 @@
               <span class="line line3"></span>
             </div>
             <div class="head-img">
-            <img src="facility_logo.png" width="150" height="50">
+            <img src="../facility_logo.png" width="150" height="50">
             </div>
           <div class="menu-items">
             <li><a href="#">Home</a></li>

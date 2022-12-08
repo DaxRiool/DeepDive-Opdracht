@@ -50,8 +50,7 @@ Route::get('/Poi/{poi_list_id?}', [IndexController::class, 'ShowElements']);
 
 Route::get('/PoiAdd/{pois_id?}', [IndexController::class, 'AddElement']);
 
-
-
+Route::post('/UpdatePoi', [IndexController::class, 'UpdatePoi']);
 
 
 Route::get('/Locations', [IndexController::class, 'ShowLocations']);
