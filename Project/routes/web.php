@@ -68,6 +68,7 @@ Route::get('/logout', [UserController::class, 'Logout']);
 
 Route::get('/Instruction/{instruction_id?}', [IndexController::class, 'ShowInstruction']);
 
-Route::get('/AddInstruction/{instruction_id?}', [IndexController::class, 'ShowInstruction']);
+Route::get('/AddStap/{instruction_id?}', [IndexController::class, 'AddStap']);
 
-Route::post('/AddInstructionStore', [IndexController::class, 'ShowInstruction']);
+Route::post('/AddStapStore', [IndexController::class, 'AddStapStore']);
+

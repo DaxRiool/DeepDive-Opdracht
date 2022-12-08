@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../poi.css">
-    <title>AddLocation</title>
+    <title>{{$poi_list->Naam}}</title>
 </head>
 <body>
     <div class="main-block">
@@ -55,15 +55,17 @@
     <br><br>
     <a href="../AddElement/{{$poi_list->id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
     <br>
-
+    
+  </div>
     @foreach($elements as $element)
+    <a href="../Instruction/{{$element->id}}">
     <button>
         <div class ="p-button">
         <p>Name: {{$element->Naam}}</p>
         <p>Difficulty: {{$element->Moeilijkheidsgraad}}</p>
-</div>
         <br><br>
       </button>
+      </a>
     @endforeach
 </body>
 </html>
