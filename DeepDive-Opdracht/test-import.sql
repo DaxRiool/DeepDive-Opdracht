@@ -1,9 +1,0 @@
-CREATE TABLE `deep dive`.`test` 
-( `id` INT NOT NULL AUTO_INCREMENT ,
-`question` VARCHAR(1080) NOT NULL , 
-`answer1` VARCHAR(1080) NOT NULL , 
-`answer2` VARCHAR(1080) NOT NULL ,
-`answer3` VARCHAR(1080) NOT NULL , 
-`answer4` VARCHAR(1080) NOT NULL ,
-`correct` VARCHAR(1080) NOT NULL , PRIMARY KEY (`id`)) 
-ENGINE = InnoDB;
