@@ -40,7 +40,7 @@
   <h1>POI</h1>
     <a href="../Test/{{$poi_list->id}}"><i class="fa-solid fa-book fa-3x"></i></a>
     <a href="../AddElement/{{$poi_list->id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
-
+<br>
 </div>
     <form action="../UpdatePoi" method="POST">
       @csrf
