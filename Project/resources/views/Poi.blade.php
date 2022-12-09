@@ -63,7 +63,8 @@
         <div class ="p-button">
         <p>Name: {{$element->Naam}}</p>
         <p>Difficulty: {{$element->Moeilijkheidsgraad}}</p>
-        <br><br>
+        <p>Type: {{$element->Status}}</p>
+        <br>
       </button>
       </a>
     @endforeach

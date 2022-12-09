@@ -72,7 +72,7 @@ class IndexController extends Controller
         DB::table('poi')->insert([
             "poi_list_ID" => $req->poi_list_id,
             "Moeilijkheidsgraad" => $req->Moeilijkheidsgraad,
-            "status" => $req->status,
+            "Status" => $req->status,
             "Naam" => $req->Naam,
         ]);
 
@@ -80,9 +80,20 @@ class IndexController extends Controller
     }
 
     public function ShowElements($poi_list_ID) {
-        $elements = DB::table('poi')->where('poi_list_ID', '=', $poi_list_ID)->get();
         
         $poi_list = DB::table('poi_list')->where('id', '=', $poi_list_ID)->get()->first();
+
+        if ($poi_list->Status == "Working") {
+            $elements = DB::table('poi')->where([
+                ['poi_list_ID', '=', $poi_list_ID],
+                ['Status', '=', "Maintenance"]]
+                )->get();
+        } else {
+            $elements = DB::table('poi')->where([
+                ['poi_list_ID', '=', $poi_list_ID],
+                ['Status', '=', "Broken"]]
+                )->get();
+        }
         
         return view("Poi", ["elements" => $elements, "poi_list" => $poi_list]);
     }

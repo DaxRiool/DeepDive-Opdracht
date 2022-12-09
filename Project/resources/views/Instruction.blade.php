@@ -38,8 +38,8 @@
     @foreach ($instructions as $instruction)
     <div class="stap-container">
     <div class="stap">
-            <p>Step: {{$instruction->stap}}</p>
-            <p>Description: {{$instruction->instructie}}</p>
+      <p>Step: {{$instruction->stap}}</p>
+      <p>Description: {{$instruction->instructie}}</p>
 </div>
 </div>
     @endforeach
