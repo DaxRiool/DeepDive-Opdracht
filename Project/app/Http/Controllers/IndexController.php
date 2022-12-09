@@ -121,8 +121,10 @@ class IndexController extends Controller
     public function AddStapStore(Request $req) {
         $instruction = DB::table('instructions')->where([
             ["poi_id", '=', $req->poi_id],
-            ["stap" => $req->step]
+            ["stap", '=', $req->stap]
             ])->get()->first();
+
+            var_dump($instruction);
 
         if (isset($instruction)){
             echo "step number already exists";
@@ -135,6 +137,51 @@ class IndexController extends Controller
     
             return redirect("Instruction/$req->poi_id");
         }
+    }
+    public function ShowTest($poi_list_id) {
 
     }
+
+    public function MakeTest($poi_list_id) {
+        return view("MakeTest", ["poi_list_id" => $poi_list_id]);
+    }
+
+    // public function MakeTestStore(Request $req) {
+    //     unset($_POST["_token"]);
+    //     unset($_POST["poi_list_id"]);
+
+    //     foreach($_POST as $key => $value) {
+
+    //         if(strpos($value, "Vraag")) {
+    //             $vraag_id = DB::table('questions')->insertGetId([
+    //                 "Vraag" => $value,
+    //             ]);
+    //         }
+
+    //         foreach($_POST as $key => $value) {
+            
+    //             if(strpos($value, "Antwoord")) {
+    //                 if(strpos($value, "r")) {
+    //                     $antwoord_id = DB::table('answers')->insertGetId([
+    //                         "answer" => $value,
+    //                         "goed_of_fout" => 1
+    //                     ]);
+    //                 } else {
+    //                     $antwoord_id = DB::table('answers')->insertGetId([
+    //                         "answer" => $value,
+    //                         "goed_of_fout" => 0
+    //                     ]);
+    //                 }
+    //             }
+
+    //             DB::table('tests')->insert([
+    //                 "poi_list_id" => $req->poi_id,
+    //                 "vraag_id" => $vraag_id,
+    //                 "antwoorden_id" => $antwoord_id
+    //             ]);
+    //         }
+    //     }
+
+        
+    // }
 }

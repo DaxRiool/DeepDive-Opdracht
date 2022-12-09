@@ -36,13 +36,15 @@
   <a href="../Pois/{{$poi_list->Locatie_ID}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
     <h1>POI</h1>
   <a href="../AddElement/{{$poi_list->id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
+
+  <a href="../MakeTest/{{$poi_list->id}}">Make Test</a>
 </div>
     <form action="../UpdatePoi" method="POST">
       @csrf
       <input type="hidden" name="poi_list_id" value="{{$poi_list->id}}">
       <input type="text" name="Naam" value="{{$poi_list->Naam}}" id="">
       <input type="text" name="Locatie_In_Gebouw" value="{{$poi_list->Locatie_In_Gebouw}}" id="">
-<div class="select-center">
+      <div class="select-center">
       <select onchange="submit()" name="Status">
         <option value="{{$poi_list->Status}}" selected>{{$poi_list->Status}}</option>
         @if ($poi_list->Status == "Working")
