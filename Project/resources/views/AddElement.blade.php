@@ -22,11 +22,11 @@
             <img src="../facility_logo.png" width="150" height="50">
             </div>
           <div class="menu-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">blogs</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">contact</a></li>
+          <li><a href="#">Location</a></li>
+            <li><a href="#">POI</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="../logout">LogOut</a></li>
           </div>
         </div>
       </div>
