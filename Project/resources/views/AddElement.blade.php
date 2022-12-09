@@ -31,10 +31,14 @@
         </div>
       </div>
     </nav>
+    <div class="under-nav">
+      <a href="../Poi/{{$poi_list_id}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
+      <h1>ADD Instruction</h1>
+      <a href=""><i class=""></i></a>
+    </div>
 
     <form action="../AddElementStore" method="post">
         @csrf
-      <h1>ADD Instruction</h1>
       <input type="hidden" name="poi_list_id" value="{{$poi_list_id}}">
       <div class="formcontainer">
       <div class="container">
@@ -59,7 +63,6 @@
     </form>
     <br>
     <br>
-    <a href="../Poi/{{$poi_list_id}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
     </div>
 </body>
 </html>
