@@ -72,3 +72,8 @@ Route::get('/Instruction/{instruction_id?}', [IndexController::class, 'ShowInstr
 Route::get('/AddInstruction/{instruction_id?}', [IndexController::class, 'ShowInstruction']);
 
 Route::post('/AddInstructionStore', [IndexController::class, 'ShowInstruction']);
+
+
+Route::get('/MakeTest/{poi_list_id?}', [IndexController::class, 'MakeTest']);
+
+Route::get('/ShowTest/{poi_list_id?}', [IndexController::class, 'ShowTest']);

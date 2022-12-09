@@ -124,8 +124,6 @@ class IndexController extends Controller
             ["stap", '=', $req->stap]
             ])->get()->first();
 
-            var_dump($instruction);
-
         if (isset($instruction)){
             echo "step number already exists";
         } else {
@@ -139,7 +137,7 @@ class IndexController extends Controller
         }
     }
     public function ShowTest($poi_list_id) {
-        return view("Test");
+        return view("Test", ["poi_id" => $poi_list_id]);
     }
 
     public function MakeTest($poi_list_id) {
