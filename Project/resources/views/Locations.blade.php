@@ -21,18 +21,22 @@
             <img src="facility_logo.png" width="150" height="50">
             </div>
           <div class="menu-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">blogs</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">contact</a></li>
+          <li><a href="#">Location</a></li>
+            <li><a href="#">POI</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="../logout">LogOut</a></li>
           </div>
         </div>
       </div>
     </nav>
+<div class="under-nav">
+  <a href=""><i class=""></i></a>
     <h1>Locations</h1>
-    <a href="AddLocation"><i class="fa-solid fa-plus fa-3x"></i></a>
-    <br><br>
+  <a href="AddLocation"><i class="fa-solid fa-plus fa-3x"></i></a>
+</div>
+    <br>
+    <br>
     @foreach ($locations as $location)
     <a href="Pois/{{$location->id}}">
         <button>

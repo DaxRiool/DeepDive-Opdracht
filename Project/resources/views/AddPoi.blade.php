@@ -11,7 +11,7 @@
     <nav>
       <div class="navbar">
         <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
+            <input class="checkbox" type="checkbox" name="" id=""/>
             <div class="hamburger-lines">
               <span class="line line1"></span>
               <span class="line line2"></span>
@@ -21,11 +21,11 @@
             <img src="../facility_logo.jpg" width="150" height="50">
             </div>
           <div class="menu-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">blogs</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">contact</a></li>
+          <li><a href="#">Location</a></li>
+            <li><a href="#">POI</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="../logout">LogOut</a></li>
           </div>
         </div>
       </div>
@@ -37,10 +37,10 @@
       <div class="container">
         <input type="hidden" name="location_id" value="{{$Location_id}}">
         <p>Poi name</p>
-        <input type="text" name="naam">
+        <input type="text" name="naam" required="">
         <br><br>
         <p>Location in building</p>
-        <input type="text" name="Locatie_In_Gebouw">
+        <input type="text" name="Locatie_In_Gebouw" required="">
         <br><br>
         <p>status</p>
         <select name="status">
