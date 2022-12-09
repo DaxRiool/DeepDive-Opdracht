@@ -42,7 +42,7 @@
         <input type="number" min="1" name="stap" required="">
           <br><br>
         <p>Instruction</p>
-        <input type="text" name="instructie" required="">
+        <textarea id="w3review" name="instructie" required="" rows="4" cols="50"></textarea>
       </div>
       <button type="submit"><strong>ENTER</strong></button>
       </div>
