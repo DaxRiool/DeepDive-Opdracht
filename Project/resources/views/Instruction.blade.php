@@ -31,7 +31,7 @@
       </div>
     </nav>
     <h1>Instructions</h1>
-    <a href="../AddStap/{{$poi_id}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
+    <a href="../AddStap/{{$poi_id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
     <a href=""></a>
     <br><br>
     @foreach ($instructions as $instruction)
