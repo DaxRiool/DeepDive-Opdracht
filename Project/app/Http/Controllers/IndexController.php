@@ -99,7 +99,8 @@ class IndexController extends Controller
     }
     
     public function UpdatePoi(Request $req) {
-        DB::table('poi_list')-> update([
+        DB::table('poi_list')->where("id", '=', $req->poi_list_id)
+        ->update([
             "Naam" => $req->Naam,
             "Status" => $req->Status,
             "Locatie_in_Gebouw" => $req->Locatie_In_Gebouw
