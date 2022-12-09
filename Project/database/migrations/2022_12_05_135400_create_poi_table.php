@@ -17,6 +17,7 @@ class CreatePoiTable extends Migration
             $table->id();
             $table->integer("poi_list_ID");
             $table->integer("instruction_ID")->nullable();
+            $table->text("Status");
             $table->string("Naam");
             $table->string("Moeilijkheidsgraad");
             $table->timestamps();

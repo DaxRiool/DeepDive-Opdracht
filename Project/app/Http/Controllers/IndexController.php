@@ -72,6 +72,7 @@ class IndexController extends Controller
         DB::table('poi')->insert([
             "poi_list_ID" => $req->poi_list_id,
             "Moeilijkheidsgraad" => $req->Moeilijkheidsgraad,
+            "status" => $req->status,
             "Naam" => $req->Naam,
         ]);
 
@@ -107,16 +108,22 @@ class IndexController extends Controller
     }
 
     public function AddStapStore(Request $req) {
-        $instruction = DB::table('instructions')->where("poi_id", '=', $req->poi_id)->get();
+        $instruction = DB::table('instructions')->where([
+            ["poi_id", '=', $req->poi_id],
+            ["stap" => $req->step]
+            ])->get()->first();
 
-        DB::table('instructions')->insert([
-            "poi_id" => $req->poi_id,
-            "stap" => $req->stap,
-            "instructie" => $req->instructie
-        ]);
+        if (isset($instruction)){
+            echo "step number already exists";
+        } else {
+            DB::table('instructions')->insert([
+                "poi_id" => $req->poi_id,
+                "stap" => $req->stap,
+                "instructie" => $req->instructie
+            ]);
+    
+            return redirect("Instruction/$req->poi_id");
+        }
 
-
-        echo $req->poi_id;
-        return redirect("Instruction/$req->poi_id");
     }
 }

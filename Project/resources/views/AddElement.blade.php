@@ -34,18 +34,24 @@
 
     <form action="../AddElementStore" method="post">
         @csrf
-      <h1>ADD Element</h1>
+      <h1>ADD Instruction</h1>
       <input type="hidden" name="poi_list_id" value="{{$poi_list_id}}">
       <div class="formcontainer">
       <div class="container">
         <p>Name</p>
         <input type="text" name="Naam" required="">
         <br><br>
-        <p>Moeilijkheidsgraad</p>
+        <p>Difficulty</p>
         <select name="Moeilijkheidsgraad">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
+        </select>
+        <br><br>
+        <p>Type</p>
+        <select name="status">
+            <option value="Maintenance">Maintenance</option>
+            <option value="Broken">Broken</option>
         </select>
       </div>
       <button type="submit"><strong>ENTER</strong></button>
