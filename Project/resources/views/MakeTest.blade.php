@@ -44,35 +44,35 @@
       <div class="container">
         <h3>Vraag 1</h3>
         <input type="text" name="Vraag1" required="">
-        <p>Antwoord1</p>
+        <p>Antwoord A</p>
         <input type="textarea" name="Antwoordr1v1" placeholder="Right answer here" required="" id="">
         <br>
-        <p>Antwoord2</p>
+        <p>Antwoord B</p>
         <input type="textarea" name="Antwoord2v1" required="" id="">
         <br>
-        <p>Antwoord3</p>
+        <p>Antwoord C</p>
         <input type="textarea" name="Antwoord3v1" required="" id="">
         <br>
         <p>Vraag 2</p>
         <input type="text" name="Vraag2" required="">
-        <p>Antwoord 1</p>
+        <p>Antwoord A</p>
         <input type="textarea" name="Antwoord1v2r" placeholder="Right answer here" required="" id="">
         <br>
-        <p>Antwoord 2</p>
+        <p>Antwoord B</p>
         <input type="textarea" name="Antwoord2v2" required="" id="">
         <br>
-        <p>Antwoord 3</p>
+        <p>Antwoord C</p>
         <input type="textarea" name="Antwoord3v2" required="" id="">
         <br>
         <p>Vraag 3</p>
         <input type="text" name="Vraag3" required="">
-        <p>Antwoord 1</p>
+        <p>Antwoord A</p>
         <input type="textarea" name="Antwoord1v3r" placeholder="Right answer here" required="" id="">
         <br>
-        <p>Antwoord 2</p>
+        <p>Antwoord B</p>
         <input type="textarea" name="Antwoord2v3" required="" id="">
         <br>
-        <p>Antwoord 3</p>
+        <p>Antwoord C</p>
         <input type="textarea" name="Antwoord3v3" required="" id="">
         <br>
       </div>

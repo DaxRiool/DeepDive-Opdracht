@@ -139,7 +139,7 @@ class IndexController extends Controller
         }
     }
     public function ShowTest($poi_list_id) {
-
+        return view("Test");
     }
 
     public function MakeTest($poi_list_id) {

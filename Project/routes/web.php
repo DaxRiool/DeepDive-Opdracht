@@ -75,6 +75,6 @@ Route::post('/AddStapStore', [IndexController::class, 'AddStapStore']);
 
 Route::get('/MakeTest/{poi_list_id?}', [IndexController::class, 'MakeTest']);
 Route::post('/MakeTestStore', [IndexController::class, 'MakeTestStore']);
-Route::get('/ShowTest', [IndexController::class, 'ShowTest']);
+Route::get('/ShowTest/{poi_id?}', [IndexController::class, 'ShowTest']);
 
 

@@ -30,9 +30,13 @@
         </div>
       </div>
     </nav>
+    <div class="under-nav">
+    <a href="../Pois/{{$Location_id}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
+  <h1>ADD POI</h1>
+  <a href=""><i class=""></i></a>
+</div>
     <form action="../AddPoiStore" method="post">
         @csrf   
-      <h1>ADD POI</h1>
       <div class="formcontainer">
       <div class="container">
         <input type="hidden" name="location_id" value="{{$Location_id}}">
@@ -55,7 +59,6 @@
     </form>
     <br>
     <br>
-    <a href="../Pois/{{$Location_id}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
   </body>
 </html>
 <script src="https://kit.fontawesome.com/89b8d7f2db.js" crossorigin="anonymous"></script>

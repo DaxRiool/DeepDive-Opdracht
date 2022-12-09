@@ -34,10 +34,12 @@
     </nav>
 <div class="under-nav">
   <a href="../Pois/{{$poi_list->Locatie_ID}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
-    <h1>POI</h1>
-  <a href="../AddElement/{{$poi_list->id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
-
+  
   <a href="../MakeTest/{{$poi_list->id}}">Make Test</a>
+  <h1>POI</h1>
+    <a href="../ShowTest/{{$poi_list->id}}">Take Test</a>
+    <a href="../AddElement/{{$poi_list->id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
+
 </div>
     <form action="../UpdatePoi" method="POST">
       @csrf
