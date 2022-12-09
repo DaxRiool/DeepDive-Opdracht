@@ -21,20 +21,20 @@
             <img src="../facility_logo.png" width="150" height="50">
             </div>
           <div class="menu-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">blogs</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">contact</a></li>
+          <li><a href="#">Location</a></li>
+            <li><a href="#">POI</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="../logout">LogOut</a></li>
           </div>
         </div>
       </div>
     </nav>
+<div class="under-nav">
+  <a href="../Poi/{{$poi_id}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
     <h1>Instructions</h1>
-    <a href="../Poi/{{$poi_id}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
-    <br><br>
-    <a href="../AddStap/{{$poi_id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
-    <br><br>
+  <a href="../AddStap/{{$poi_id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
+</div>
     @foreach ($instructions as $instruction)
     <div class="stap-container">
     <div class="stap">

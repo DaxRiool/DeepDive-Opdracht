@@ -380,30 +380,6 @@ button:hover {
 
 }
 
-i.fa-solid.fa-arrow-left.fa-3x {
-  position: relative;
-  bottom: 39px;
-  left: 21px;
-}
-
-i.fa-solid.fa-plus.fa-3x {
-    position: relative;
-    bottom: 43px;
-    left: 22px;
-}
-
-i.fa-solid.fa-arrow-left.fa-3x {
-  position: relative;
-  bottom: 39px;
-  left: 21px;
-}
-
-i.fa-solid.fa-plus.fa-3x {
-    position: relative;
-    bottom: 43px;
-    left: 22px;
-}
-
 select {
   border-radius: 11px;
   width: 115px;
@@ -419,4 +395,9 @@ select {
   position: relative;
   top: 15px;
   font-size: 25px;
+}
+
+.under-nav {
+  display: flex;
+  justify-content: space-around;
 }
