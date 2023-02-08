@@ -53,7 +53,12 @@
         <p>Antwoord C</p>
         <input type="textarea" name="Antwoord3v1" required="" id="">
         <br>
+<<<<<<< HEAD
         <p>Vraag 2</p>
+=======
+        <br>
+        <h3>Vraag 2</h3>
+>>>>>>> 9453999948be31aebebfb356b3ee24c5ad310c7d
         <input type="text" name="Vraag2" required="">
         <p>Antwoord A</p>
         <input type="textarea" name="Antwoord1v2r" placeholder="Right answer here" required="" id="">
@@ -64,7 +69,12 @@
         <p>Antwoord C</p>
         <input type="textarea" name="Antwoord3v2" required="" id="">
         <br>
+<<<<<<< HEAD
         <p>Vraag 3</p>
+=======
+        <br>
+        <h3>Vraag 3</h3>
+>>>>>>> 9453999948be31aebebfb356b3ee24c5ad310c7d
         <input type="text" name="Vraag3" required="">
         <p>Antwoord A</p>
         <input type="textarea" name="Antwoord1v3r" placeholder="Right answer here" required="" id="">

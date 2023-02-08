@@ -32,6 +32,7 @@
         </div>
       </div>
     </nav>
+<<<<<<< HEAD
 <div class="under-nav">
   <a href="../Pois/{{$poi_list->Locatie_ID}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
   
@@ -40,6 +41,17 @@
     <a href="../ShowTest/{{$poi_list->id}}">Take Test</a>
     <a href="../AddElement/{{$poi_list->id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
 
+=======
+    <br>
+<div class="under-nav">
+  <a href="../Pois/{{$poi_list->Locatie_ID}}"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
+  
+  <a href="../MakeTest/{{$poi_list->id}}"><i class="fa-solid fa-book-medical fa-3x"></i></a>
+  <h1>POI</h1>
+    <a href="../Test/{{$poi_list->id}}"><i class="fa-solid fa-book fa-3x"></i></a>
+    <a href="../AddElement/{{$poi_list->id}}"><i class="fa-solid fa-plus fa-3x"></i></a>
+<br>
+>>>>>>> 9453999948be31aebebfb356b3ee24c5ad310c7d
 </div>
     <form action="../UpdatePoi" method="POST">
       @csrf
